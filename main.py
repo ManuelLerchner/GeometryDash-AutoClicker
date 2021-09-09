@@ -8,7 +8,7 @@ from src.KeyboardListener import KeyboardListener
 from src.MouseListener import MouseListener
 
 
-TIME_DELAY = 2
+TIME_DELAY = 4
 
 
 def saveDataToFile(fileName, history):

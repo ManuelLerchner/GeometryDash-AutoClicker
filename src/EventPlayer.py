@@ -23,7 +23,7 @@ class EventPlayer:
         currentIndex = 0
         while currentIndex < len(self.eventList):
             if(time.time_ns()-startTime >= int(self.eventList[currentIndex]["time"])):
-
+                print(time.time_ns()-startTime-int(self.eventList[currentIndex]["time"]))
                 # Execute Event with Index "currentIndex"
                 #print(currentIndex, self.eventList[currentIndex])
                 threading.Thread(target=self.executeEvent,

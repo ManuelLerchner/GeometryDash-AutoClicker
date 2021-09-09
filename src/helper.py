@@ -1,9 +1,15 @@
 from colorama import Fore, Back, Style
 
-
-def printYellow(str, *args, **kwargs):
-    print(Fore.YELLOW+str+Style.RESET_ALL, *args, *kwargs)
+BOLD = '\033[1m'
 
 
-def printGreen(str, *args, **kwargs):
-    print(Fore.GREEN+str+Style.RESET_ALL, *args, *kwargs)
+def printYellow(str, pre="", *args, **kwargs):
+    print(Fore.YELLOW+pre+str+Style.RESET_ALL, *args, *kwargs)
+
+
+def printGreen(str, pre="", *args, **kwargs):
+    print(Fore.GREEN+pre+str+Style.RESET_ALL, *args, *kwargs)
+
+
+def printRed(str, pre="", *args, **kwargs):
+    print(Fore.RED+pre+str+Style.RESET_ALL, *args, *kwargs)

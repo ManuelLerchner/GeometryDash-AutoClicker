@@ -1,12 +1,16 @@
+import time
 from colorama import Fore, Style
-from src.helper import printGreen, printYellow
 
+from src.helper import printGreen, printYellow, printRed, BOLD
 from src.KeyboardListener import KeyboardListener
 from src.MouseListener import MouseListener
 
 
+TIME_DELAY = 2
+
+
 def saveDataToFile():
-    printYellow("Saving Data...")
+    printYellow("Saving Data ...")
     return
 
 
@@ -20,13 +24,17 @@ if __name__ == '__main__':
     # Input filename
     filename = str(input(Fore.GREEN+"Enter Record-Name: "+Style.RESET_ALL))
 
+    # Wait Time
+    printYellow(f"\nStart listening in {TIME_DELAY} seconds ...")
+    printRed("Stop Recording with ESC-Key", pre=BOLD)
+    time.sleep(TIME_DELAY)
     printYellow("Start listening now ...\n")
 
     # Start Listener Threads
     ML.Listener.start()
     KL.Listener.start()
 
-    # Wait untill finished Recording
+    # Wait until finished Recording
     ML.Listener.join()
     KL.Listener.join()
 
@@ -35,4 +43,4 @@ if __name__ == '__main__':
     # save Data
     saveDataToFile()
 
-    printGreen(f"'{filename}' has been saved")
+    printGreen(f"'{filename}' has been saved", pre=BOLD)

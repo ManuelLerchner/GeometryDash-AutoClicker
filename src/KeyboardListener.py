@@ -16,7 +16,7 @@ class KeyboardListener:
             on_press=self.on_press, on_release=self.on_release)
 
     def on_press(self, key):
-        print("PRESS:", key)
+        #print("PRESS:", key)
 
         if key in [keyboard.Key.esc, keyboard.Key.space, keyboard.Key.enter]:
             self.handleEvent("PRESS", str(key).split(".")[1])
@@ -24,7 +24,7 @@ class KeyboardListener:
             self.handleEvent("PRESS", str(key).replace("'", ""))
 
     def on_release(self, key):
-        print("RELEASE:", key)
+        #print("RELEASE:", key)
 
         if key in [keyboard.Key.esc, keyboard.Key.space, keyboard.Key.enter]:
             self.handleEvent("RELEASE", str(key).split(".")[1])

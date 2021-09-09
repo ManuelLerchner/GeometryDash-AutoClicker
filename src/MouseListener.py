@@ -12,7 +12,7 @@ class MouseListener:
         self.history = history
 
     def on_click(self, x, y, button, pressed):
-        print("PRESSED" if pressed else "RELEASED", str(button))
+        #print("PRESSED" if pressed else "RELEASED", str(button))
 
         self.handleEvent(
             "PRESS" if pressed else "RELEASE", str(button))

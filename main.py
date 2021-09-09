@@ -28,8 +28,9 @@ def saveDataToFile(fileName, data):
 
 
 if __name__ == '__main__':
-    ML = MouseListener()
-    KL = KeyboardListener(ML)
+    history = []
+    ML = MouseListener(history)
+    KL = KeyboardListener(ML, history)
 
     print("-"*32)
     printYellow("Started Recorder")
@@ -48,6 +49,7 @@ if __name__ == '__main__':
     KL.Listener.start()
 
     KL.tStartRecording = time.time()
+    ML.tStartRecording = time.time()
 
     # Wait until finished Recording
     ML.Listener.join()
@@ -56,6 +58,6 @@ if __name__ == '__main__':
     printYellow("\nFinish Recording")
 
     # save Data
-    saveDataToFile(filename, KL.history)
+    saveDataToFile(filename, history)
 
     printGreen(f"'{filename}' has been saved", pre=BOLD)

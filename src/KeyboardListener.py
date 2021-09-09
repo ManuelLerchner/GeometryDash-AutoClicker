@@ -5,21 +5,33 @@ import time
 
 class KeyboardListener:
 
-    def __init__(self, MouseListener):
+    def __init__(self, MouseListener, history):
         self.MouseListener = MouseListener
-        self.history = []
         self.tStartRecording = None
+        self.history = history
 
         self.Listener = Listener(
             on_press=self.on_press, on_release=self.on_release)
 
     def on_press(self, key):
-        print("press", key)
-        self.history.append((time.time()-self.tStartRecording, "PRESS", key))
+        print("PRESS:", key)
+
+        if key == keyboard.Key.esc:
+            self.history.append(
+                (time.time()-self.tStartRecording, "PRESS", str(key)))
+        else:
+            self.history.append(
+                (time.time()-self.tStartRecording, "PRESS", key))
 
     def on_release(self, key):
-        print("release", key)
-        self.history.append((time.time()-self.tStartRecording, "RELEASE", key))
+        print("RELEASE:", key)
+
+        if key == keyboard.Key.esc:
+            self.history.append(
+                (time.time()-self.tStartRecording, "PRESS", str(key)))
+        else:
+            self.history.append(
+                (time.time()-self.tStartRecording, "RELEASE", key))
 
         if key == keyboard.Key.esc:
             self.MouseListener.stop()

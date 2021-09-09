@@ -9,8 +9,13 @@ from src.MouseListener import MouseListener
 TIME_DELAY = 2
 
 
-def saveDataToFile():
+def saveDataToFile(fileName):
     printYellow("Saving Data ...")
+    
+    with open('fileName.txt', 'w') as file:
+        for item in my_list:
+            file.write(f"{item}\n")
+
     return
 
 

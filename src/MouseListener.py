@@ -1,6 +1,8 @@
 from pynput.mouse import Listener
 import time
 
+from src.helper import makeDict
+
 
 class MouseListener:
 
@@ -10,10 +12,14 @@ class MouseListener:
         self.history = history
 
     def on_click(self, x, y, button, pressed):
+        print("PRESSED" if pressed else "RELEASED", str(button))
 
-        self.history.append(
-            (time.time()-self.tStartRecording, "MOUSE", "PRESS" if pressed else "RELEASE", str(button)))
-        print(button, "PRESSED" if pressed else "RELEASED")
+        self.handleEvent(
+            "PRESS" if pressed else "RELEASE", str(button))
 
     def stop(self):
         self.Listener.stop()
+
+    def handleEvent(self, event, key):
+        self.history.append(makeDict(time.time()-self.tStartRecording,
+                                     "MOUSE", event, key))

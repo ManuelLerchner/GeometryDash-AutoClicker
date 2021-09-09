@@ -1,6 +1,7 @@
 import time
 from colorama import Fore, Style
 import os.path
+import argparse
 
 from src.helper import printGreen, printYellow, printRed, BOLD
 from src.KeyboardListener import KeyboardListener

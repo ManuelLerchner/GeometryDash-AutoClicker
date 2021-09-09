@@ -13,3 +13,7 @@ def printGreen(str, pre="", *args, **kwargs):
 
 def printRed(str, pre="", *args, **kwargs):
     print(Fore.RED+pre+str+Style.RESET_ALL, *args, *kwargs)
+
+
+def makeDict(time, type, event, button):
+    return {"time": time, "type": type, "event": event, "button": button}

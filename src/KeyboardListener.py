@@ -18,18 +18,18 @@ class KeyboardListener:
     def on_press(self, key):
         print("PRESS:", key)
 
-        if key in [keyboard.Key.esc, keyboard.Key.space]:
-            self.handleEvent("PRESS", str(key))
+        if key in [keyboard.Key.esc, keyboard.Key.space, keyboard.Key.enter]:
+            self.handleEvent("PRESS", str(key).split(".")[1])
         else:
-            self.handleEvent("PRESS", key)
+            self.handleEvent("PRESS", str(key).replace("'", ""))
 
     def on_release(self, key):
         print("RELEASE:", key)
 
-        if key in [keyboard.Key.esc, keyboard.Key.space]:
-            self.handleEvent("RELEASE", str(key))
+        if key in [keyboard.Key.esc, keyboard.Key.space, keyboard.Key.enter]:
+            self.handleEvent("RELEASE", str(key).split(".")[1])
         else:
-            self.handleEvent("RELEASE", key)
+            self.handleEvent("RELEASE", str(key).replace("'", ""))
 
         if key == keyboard.Key.esc:
             self.MouseListener.stop()

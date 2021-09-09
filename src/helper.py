@@ -16,4 +16,4 @@ def printRed(str, pre="", *args, **kwargs):
 
 
 def makeDict(time, type, event, button):
-    return {"time": time, "type": type, "event": event, "button": button}
+    return {"time": str(time), "group": type, "type": event, "button": button}

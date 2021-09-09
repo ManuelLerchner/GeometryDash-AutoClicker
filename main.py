@@ -1,7 +1,7 @@
 import time
 from colorama import Fore, Style
 import os.path
-import argparse
+import json
 
 from src.helper import printGreen, printYellow, printRed, BOLD
 from src.KeyboardListener import KeyboardListener
@@ -11,7 +11,7 @@ from src.MouseListener import MouseListener
 TIME_DELAY = 2
 
 
-def saveDataToFile(fileName, data):
+def saveDataToFile(fileName, history):
     printYellow("Saving Data ...")
 
     filenameCount = 1
@@ -24,8 +24,7 @@ def saveDataToFile(fileName, data):
         filenameCount += 1
 
     with open(newFileName, 'w') as file:
-        for item in data:
-            file.write(f"{item}\n")
+        json.dump(history, file)
 
 
 if __name__ == '__main__':

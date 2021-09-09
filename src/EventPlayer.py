@@ -60,8 +60,8 @@ class EventPlayer:
     def startPlaying(self, filename, TIME_DELAY):
         self.getEvents(filename)
         printYellow(f"\nStart playing in {TIME_DELAY} seconds ...")
-        printRed("Stop playing with ESC-Key", pre=BOLD)
         time.sleep(TIME_DELAY)
         printYellow("Start playing now ...\n")
 
         self.playFile()
+

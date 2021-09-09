@@ -1,8 +1,8 @@
 import argparse
 import os
 
-from Recorder import Recorder
-from EventPlayer import EventPlayer
+from src.Recorder import Recorder
+from src.EventPlayer import EventPlayer
 
 parser = argparse.ArgumentParser(description='Description of your program')
 
@@ -17,12 +17,11 @@ parser.add_argument(
 
 args = parser.parse_args()
 
-
 # Check if valid
 if not str(args.action).upper() in ["RECORD", "REPLAY"]:
     parser.error('-a needs to be "RECORD" or "REPLAY"')
 
-TIME_DELAY = args.time
+TIME_DELAY = float(args.time)
 
 # Replay
 if str(args.action).upper() == "REPLAY":

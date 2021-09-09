@@ -12,8 +12,8 @@ class MouseListener:
     def on_click(self, x, y, button, pressed):
 
         self.history.append(
-            (time.time()-self.tStartRecording, "PRESS" if pressed else "RELEASE", str(button)))
-        print(x, y, button, pressed)
+            (time.time()-self.tStartRecording, "MOUSE", "PRESS" if pressed else "RELEASE", str(button)))
+        print(button, "PRESSED" if pressed else "RELEASED")
 
     def stop(self):
         self.Listener.stop()

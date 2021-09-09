@@ -18,20 +18,20 @@ class KeyboardListener:
 
         if key == keyboard.Key.esc:
             self.history.append(
-                (time.time()-self.tStartRecording, "PRESS", str(key)))
+                (time.time()-self.tStartRecording, "KEY", "PRESS", str(key)))
         else:
             self.history.append(
-                (time.time()-self.tStartRecording, "PRESS", key))
+                (time.time()-self.tStartRecording, "KEY", "PRESS", key))
 
     def on_release(self, key):
         print("RELEASE:", key)
 
         if key == keyboard.Key.esc:
             self.history.append(
-                (time.time()-self.tStartRecording, "PRESS", str(key)))
+                (time.time()-self.tStartRecording, "KEY", "PRESS", str(key)))
         else:
             self.history.append(
-                (time.time()-self.tStartRecording, "RELEASE", key))
+                (time.time()-self.tStartRecording, "KEY", "RELEASE", key))
 
         if key == keyboard.Key.esc:
             self.MouseListener.stop()

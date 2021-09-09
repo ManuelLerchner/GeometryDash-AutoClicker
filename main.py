@@ -1,5 +1,6 @@
 import time
 from colorama import Fore, Style
+import os.path
 
 from src.helper import printGreen, printYellow, printRed, BOLD
 from src.KeyboardListener import KeyboardListener
@@ -9,14 +10,21 @@ from src.MouseListener import MouseListener
 TIME_DELAY = 2
 
 
-def saveDataToFile(fileName):
+def saveDataToFile(fileName, data):
     printYellow("Saving Data ...")
-    
-    with open('fileName.txt', 'w') as file:
-        for item in my_list:
-            file.write(f"{item}\n")
 
-    return
+    filenameCount = 1
+    newFileName = "savedRecordings/"+fileName+".txt"
+
+    while True:
+        if not os.path.isfile(newFileName):
+            break
+        newFileName = "savedRecordings/"+fileName+"_"+str(filenameCount)+".txt"
+        filenameCount += 1
+
+    with open(newFileName, 'w') as file:
+        for item in data:
+            file.write(f"{item}\n")
 
 
 if __name__ == '__main__':
@@ -39,6 +47,8 @@ if __name__ == '__main__':
     ML.Listener.start()
     KL.Listener.start()
 
+    KL.tStartRecording = time.time()
+
     # Wait until finished Recording
     ML.Listener.join()
     KL.Listener.join()
@@ -46,6 +56,6 @@ if __name__ == '__main__':
     printYellow("\nFinish Recording")
 
     # save Data
-    saveDataToFile()
+    saveDataToFile(filename, KL.history)
 
     printGreen(f"'{filename}' has been saved", pre=BOLD)

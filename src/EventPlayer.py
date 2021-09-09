@@ -1,3 +1,4 @@
+import threading
 from src.helper import printGreen, printYellow, printRed, BOLD
 
 from pynput.mouse import Button, Controller as MouseController
@@ -25,7 +26,9 @@ class EventPlayer:
 
                 # Execute Event with Index "currentIndex"
                 #print(currentIndex, self.eventList[currentIndex])
-                self.executeEvent(self.eventList[currentIndex])
+                threading.Thread(target=self.executeEvent,
+                                 args=(self.eventList[currentIndex],)).start()
+
                 currentIndex += 1
 
     def executeEvent(self, event):
@@ -65,3 +68,4 @@ class EventPlayer:
         self.playFile()
 
         printGreen(f"Replaying '{filename}' has finished.", pre=BOLD)
+

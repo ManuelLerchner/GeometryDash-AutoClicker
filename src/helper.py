@@ -17,8 +17,8 @@ def printRed(str, pre="", *args, **kwargs):
     print(Fore.RED+pre+str+Style.RESET_ALL, *args, *kwargs)
 
 
-def makeDict(time, type, event, button):
-    return {"time": str(time), "group": type, "type": event, "button": button}
+def makeDict(time, group, type, button):
+    return {"time": str(time), "group": group, "type": type, "button": button}
 
 
 def saveDataToFile(fileName, history):

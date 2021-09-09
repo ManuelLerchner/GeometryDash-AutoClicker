@@ -1,3 +1,4 @@
+import threading
 from pynput.mouse import Listener
 import time
 
@@ -14,12 +15,17 @@ class MouseListener:
     def on_click(self, x, y, button, pressed):
         #print("PRESSED" if pressed else "RELEASED", str(button))
 
-        self.handleEvent(
-            "PRESS" if pressed else "RELEASE", str(button))
+        timeNS = time.time_ns()-self.tStartRecording
+        threading.Thread(target=self.handleClick,
+                         args=(button, pressed, timeNS)).start()
 
     def stop(self):
         self.Listener.stop()
 
-    def handleEvent(self, event, key):
-        self.history.append(makeDict(time.time_ns()-self.tStartRecording,
+    def handleClick(self, button, pressed, time):
+        self.handleEvent(time,
+                         "PRESS" if pressed else "RELEASE", str(button))
+
+    def handleEvent(self, time, event, key):
+        self.history.append(makeDict(time,
                                      "MOUSE", event, key))

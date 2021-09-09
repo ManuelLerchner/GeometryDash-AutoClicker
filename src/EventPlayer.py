@@ -16,13 +16,12 @@ class EventPlayer:
         with open(f"savedRecordings/{fileName}.txt", 'r') as file:
             self.eventList = json.load(file)
 
-
     def playFile(self):
 
-        startTime = time.time()
+        startTime = time.time_ns()
         currentIndex = 0
         while currentIndex < len(self.eventList):
-            if(time.time()-startTime >= float(self.eventList[currentIndex]["time"])):
+            if(time.time_ns()-startTime >= int(self.eventList[currentIndex]["time"])):
 
                 # Execute Event with Index "currentIndex"
                 #print(currentIndex, self.eventList[currentIndex])
@@ -42,15 +41,15 @@ class EventPlayer:
 
         if(event["group"] == "MOUSE"):
             if (event["type"] == "PRESS"):
-                if(event["button"]=="Button.left"):
+                if(event["button"] == "Button.left"):
                     pyautogui.mouseDown()
-                if(event["button"]=="Button.right"):
+                if(event["button"] == "Button.right"):
                     pyautogui.mouseDown(button="right")
 
             if (event["type"] == "RELEASE"):
-                if(event["button"]=="Button.left"):
+                if(event["button"] == "Button.left"):
                     pyautogui.mouseUp()
-                if(event["button"]=="Button.right"):                
+                if(event["button"] == "Button.right"):
                     pyautogui.mouseUp(button="right")
 
     def printEventList(self):
@@ -65,3 +64,4 @@ class EventPlayer:
 
         self.playFile()
 
+        printGreen(f"Replaying '{filename}' has finished.", pre=BOLD)

@@ -21,5 +21,5 @@ class MouseListener:
         self.Listener.stop()
 
     def handleEvent(self, event, key):
-        self.history.append(makeDict(time.time()-self.tStartRecording,
+        self.history.append(makeDict(time.time_ns()-self.tStartRecording,
                                      "MOUSE", event, key))

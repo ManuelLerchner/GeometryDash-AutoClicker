@@ -14,21 +14,19 @@ class EventPlayer:
 
 
     def getEvents(self, fileName):
-        with open(f"savedRecordings/{fileName}.txt", 'r') as data:
-            for line in data:
-                event = json.loads(line)
-                self.eventList.append(event)
+        with open(f"savedRecordings/{fileName}.txt", 'r') as file:
+            self.eventList = json.load(file)
+
 
     def playFile(self):
 
         startTime = time.time()
-        print(startTime)
         currentIndex = 0
         while currentIndex < len(self.eventList):
             if(time.time()-startTime >= float(self.eventList[currentIndex]["time"])):
 
                 # Execute Event with Index "currentIndex"
-                print(currentIndex, self.eventList[currentIndex])
+                #print(currentIndex, self.eventList[currentIndex])
                 self.executeEvent(self.eventList[currentIndex])
                 currentIndex += 1
 
@@ -47,15 +45,15 @@ class EventPlayer:
         if(event["group"] == "MOUSE"):
             if (event["type"] == "PRESS"):
                 if(event["button"]=="Button.left"):
-                    self.mouse.press(Button.left)
+                    pyautogui.mouseDown()
                 if(event["button"]=="Button.right"):
-                    self.mouse.press(Button.right)
+                    pyautogui.mouseDown(button="right")
 
             if (event["type"] == "RELEASE"):
                 if(event["button"]=="Button.left"):
-                    self.mouse.release(Button.left)
+                    pyautogui.mouseUp()
                 if(event["button"]=="Button.right"):                
-                    self.mouse.release(Button.right)
+                    pyautogui.mouseUp(button="right")
 
 
     def printEventList(self):
@@ -63,12 +61,12 @@ class EventPlayer:
             print(event)
 
 
+
+
 EP = EventPlayer()
+EP.getEvents("BaseAfterBaseMouseTest")
 
-EP.getEvents("Test123")
-#EP.printEventList()
-
-TIME_DELAY = 2
+TIME_DELAY = 4
 
 printYellow(f"\nStart playing in {TIME_DELAY} seconds ...")
 printRed("Stop playing with ESC-Key", pre=BOLD)

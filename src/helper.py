@@ -1,3 +1,6 @@
+import progressbar
+import sys
+import time
 from colorama import Fore, Back, Style
 import os
 import json
@@ -37,4 +40,11 @@ def saveDataToFile(fileName, history, overwrite):
         filenameCount += 1
 
     with open(newFileName, 'w') as file:
-        json.dump(history, file)
+        json.dump(history, file, indent=4)
+
+
+def progressBar(duration, toolbar_width=40):
+    with progressbar.ProgressBar(max_value=toolbar_width) as bar:
+        for i in range(toolbar_width):
+            time.sleep(duration/toolbar_width)
+            bar.update(i)

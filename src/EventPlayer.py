@@ -1,9 +1,10 @@
-from src.helper import printGreen, printYellow, printRed, BOLD
+from src.helper import printGreen, printYellow, printRed, BOLD, progressBar
 
 from pynput.mouse import Button, Controller as MouseController
 import pyautogui
 import json
 import time
+import threading
 
 
 class EventPlayer:
@@ -18,14 +19,22 @@ class EventPlayer:
             self.eventList = json.load(file)
 
     def playFile(self):
-        startTime = time.perf_counter_ns()
-        currentIndex = 0
-        while currentIndex < len(self.eventList):          
-            if(time.perf_counter_ns()-startTime >= int(self.eventList[currentIndex]["time"])):                             
-                self.executeEvent(self.eventList[currentIndex])                              
-                currentIndex += 1
-                startTime += int(self.eventList[currentIndex]["time"])
-                
+        timeCorrection = 0
+
+        for i in range(len(self.eventList)):
+            deltaShould = int(self.eventList[i]["time"])
+
+            tStart = time.perf_counter_ns()
+
+            time.sleep((deltaShould-timeCorrection)/10**9)
+
+            threading.Thread(target=self.executeEvent,
+                             args=(self.eventList[i],)).start()
+
+            tEnd = time.perf_counter_ns()
+            deltaActual = tEnd-tStart
+
+            timeCorrection = deltaActual-deltaShould
 
     def executeEvent(self, event):
         if(event["group"] == "KEY"):
@@ -50,17 +59,16 @@ class EventPlayer:
                 elif(event["button"] == "Button.right"):
                     pyautogui.mouseUp(button="right")
 
-    def printEventList(self):
-        for event in self.eventList:
-            print(event)
-
     def startPlaying(self, filename, TIME_DELAY):
         self.getEvents(filename)
-        print(self.eventList)
         printYellow(f"\nStart playing in {TIME_DELAY} seconds ...")
-        time.sleep(TIME_DELAY)
+        progressBar(TIME_DELAY)
         printYellow("Start playing now ...\n")
 
+        tstart = time.perf_counter_ns()
+
         self.playFile()
+
+        print(time.perf_counter_ns()-tstart)
 
         printGreen(f"Replaying '{filename}' has finished.", pre=BOLD)

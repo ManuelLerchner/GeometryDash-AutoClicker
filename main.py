@@ -13,7 +13,7 @@ parser.add_argument(
     '-f', '--filename', help='Filename to replay')
 
 parser.add_argument(
-    '-t', '--time', help='Delay time before start of action', default=2)
+    '-t', '--time', help='Delay time before start of action', default=4)
 
 parser.add_argument(
     '-o', '--overrite', help='if file exists already, overwrite it', default=False, type=bool, nargs='?', const=True)

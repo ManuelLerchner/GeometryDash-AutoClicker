@@ -36,5 +36,5 @@ class KeyboardListener:
             return False
 
     def handleEvent(self, event, key):
-        self.history.append(makeDict(time.time_ns()-self.tStartRecording,
-                                     "KEY", event, key))
+        self.history.append(makeDict(time.perf_counter_ns()-self.tStartRecording, "KEY", event, key))
+        self.tStartRecording = time.perf_counter_ns()

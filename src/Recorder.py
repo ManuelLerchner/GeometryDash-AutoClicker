@@ -36,8 +36,8 @@ class Recorder:
         self.ML.Listener.start()
         self.KL.Listener.start()
 
-        self.KL.tStartRecording = time.time_ns()
-        self.ML.tStartRecording = time.time_ns()
+        self.KL.tStartRecording = time.perf_counter_ns()
+        self.ML.tStartRecording = time.perf_counter_ns()
 
         # Wait until finished Recording
         self.ML.Listener.join()

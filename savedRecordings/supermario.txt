@@ -1,0 +1,1304 @@
+[
+    {
+        "time": "1071462500",
+        "group": "MOUSE",
+        "type": "PRESS",
+        "button": "Button.left"
+    },
+    {
+        "time": "87072500",
+        "group": "MOUSE",
+        "type": "RELEASE",
+        "button": "Button.left"
+    },
+    {
+        "time": "585369400",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "160149500",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "287657500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "288496100",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "96152400",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "48048900",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "343813500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "509906400",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31616700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32223400",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32159900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31628700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32123400",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32400000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30422400",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "45722200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32244600",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30971800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31626700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31782500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32586100",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31360600",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31734900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31412000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30760600",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "45897600",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30930700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "11948500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "400318300",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "231956400",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "375930500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "504864300",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32884800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31201000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30587100",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32442400",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "47928900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "1252300",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "150804800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "287857300",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "231919000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "505430000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31748300",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32149700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31320200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "39449000",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "200322500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "127624400",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "343923000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "a"
+    },
+    {
+        "time": "80029400",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "a"
+    },
+    {
+        "time": "439975100",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "104064200",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "215974500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "511504200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "29467700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32087000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30989600",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30542800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32635800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "46034500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30367400",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31156800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31789900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30556600",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30501700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32335800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31503900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31540700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "45189800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31149700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31944000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32199200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31886100",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31756400",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31952900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "29900600",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32244300",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31896500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "46234600",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30598000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31030300",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "33049300",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "5666000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "159954800",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "1520231700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "303978200",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "895934200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "319980000",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "151955700",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "152140900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "384141800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "511180300",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "9026300",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "463674900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "160847500",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "215465700",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "256255800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "247304000",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "168055200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "503911100",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31460100",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31861500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31887000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "47490800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31463900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "29555300",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31907600",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31586400",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31042400",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32572700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31136500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31488500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "45938900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31222000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32366800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31291400",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32138500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32457500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30038800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30421900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31833200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "13252700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "311601800",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "519956200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "152042000",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "192267900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "127710900",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "160309000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "303684000",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "423951600",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "384145200",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "752058200",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "183878200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "55941100",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "495930000",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "1968247900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "159919300",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "295804700",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "71793600",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "a"
+    },
+    {
+        "time": "296594500",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "a"
+    },
+    {
+        "time": "103638200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "a"
+    },
+    {
+        "time": "136380700",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "a"
+    },
+    {
+        "time": "63577500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "a"
+    },
+    {
+        "time": "208399300",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "a"
+    },
+    {
+        "time": "863687500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "128310000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "303606900",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "55762600",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "288253700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "a"
+    },
+    {
+        "time": "376023900",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "a"
+    },
+    {
+        "time": "224026500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "1180700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "198792700",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "304229000",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "135484500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "a"
+    },
+    {
+        "time": "128384400",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "a"
+    },
+    {
+        "time": "64158700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "507428100",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31670800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31350200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30676600",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32571500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31072900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31159600",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "183684000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "176171000",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "160142700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "280187600",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "527536600",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "w"
+    },
+    {
+        "time": "256082200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "a"
+    },
+    {
+        "time": "103861900",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "a"
+    },
+    {
+        "time": "40033800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "a"
+    },
+    {
+        "time": "256083100",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "w"
+    },
+    {
+        "time": "32420700",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "a"
+    },
+    {
+        "time": "39753500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "a"
+    },
+    {
+        "time": "263872000",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "a"
+    },
+    {
+        "time": "103851400",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "509756500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30144200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31807800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31557000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30118500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32077200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "47255500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31359900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32320700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32243500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31329000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31488200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31475000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30504300",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31588700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31195400",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31833900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "46967100",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31661100",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31434500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30236000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32003700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31251800",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "33094700",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30705400",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "31794100",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30434500",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "47187200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "29737600",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "30827000",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "32291200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "14527200",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "63853200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "a"
+    },
+    {
+        "time": "312045600",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "a"
+    },
+    {
+        "time": "559872200",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "d"
+    },
+    {
+        "time": "231862600",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "d"
+    },
+    {
+        "time": "2399786900",
+        "group": "KEY",
+        "type": "PRESS",
+        "button": "esc"
+    },
+    {
+        "time": "159975200",
+        "group": "KEY",
+        "type": "RELEASE",
+        "button": "esc"
+    }
+]

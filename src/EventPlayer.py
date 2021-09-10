@@ -25,7 +25,7 @@ class EventPlayer:
 
             tStart = time.perf_counter_ns()
 
-            time.sleep((deltaShould-timeCorrection)/10**9)
+            time.sleep(max(0,(deltaShould-timeCorrection)/10**9))
 
             threading.Thread(target=self.executeEvent,
                              args=(self.eventList[i],)).start()

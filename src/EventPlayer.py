@@ -11,7 +11,6 @@ class EventPlayer:
     def __init__(self):
         self.mouse = MouseController()
         self.eventList = []
-        self.correctionTime = 100000
 
     def getEvents(self, fileName):
         with open(f"savedRecordings/{fileName}.txt", 'r') as file:
@@ -21,10 +20,11 @@ class EventPlayer:
         startTime = time.perf_counter_ns()
         currentIndex = 0
         while currentIndex < len(self.eventList):          
-            if(time.perf_counter_ns()-startTime >= int(self.eventList[currentIndex]["time"])):                             
+            if(time.perf_counter_ns()-startTime >= int(self.eventList[currentIndex]["time"])):
+                startTime += int(self.eventList[currentIndex]["time"])                            
                 self.executeEvent(self.eventList[currentIndex])                              
                 currentIndex += 1
-                startTime += int(self.eventList[currentIndex]["time"])
+                
                 
 
     def executeEvent(self, event):

@@ -12,7 +12,6 @@ class EventPlayer:
     def __init__(self):
         self.mouse = MouseController()
         self.eventList = []
-        self.correctionTime = 100000
 
     def getEvents(self, fileName):
         with open(f"savedRecordings/{fileName}.txt", 'r') as file:

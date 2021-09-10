@@ -12,6 +12,7 @@ class EventPlayer:
     def __init__(self):
         self.mouse = MouseController()
         self.eventList = []
+        self.correctionDelta = 200000
 
     def getEvents(self, fileName):
         with open(f"savedRecordings/{fileName}.txt", 'r') as file:
@@ -20,40 +21,49 @@ class EventPlayer:
     def playFile(self):
 
         startTime = time.time_ns()
+
         currentIndex = 0
         while currentIndex < len(self.eventList):
-            if(time.time_ns()-startTime >= int(self.eventList[currentIndex]["time"])):
-                print(time.time_ns()-startTime-int(self.eventList[currentIndex]["time"]))
-                # Execute Event with Index "currentIndex"
-                #print(currentIndex, self.eventList[currentIndex])
+            if(time.time_ns()-startTime+self.correctionDelta >= int(self.eventList[currentIndex]["time"])):
+
                 threading.Thread(target=self.executeEvent,
-                                 args=(self.eventList[currentIndex],)).start()
+                                 args=(
+                                     self.eventList[currentIndex],)
+                                 ).start()
+
+                delta = (time.time_ns()-startTime -
+                         int(self.eventList[currentIndex]["time"]))
+
+                self.correctionDelta = self.lerp(
+                    self.correctionDelta, delta, 0.8)
 
                 currentIndex += 1
 
     def executeEvent(self, event):
-
         if(event["group"] == "KEY"):
             if (event["type"] == "PRESS"):
                 # self.keyboard.press(event["button"])
                 pyautogui.keyDown(event["button"])
 
-            if (event["type"] == "RELEASE"):
+            elif (event["type"] == "RELEASE"):
                 # self.keyboard.release(event["button"])
                 pyautogui.keyUp(event["button"])
 
-        if(event["group"] == "MOUSE"):
+        elif(event["group"] == "MOUSE"):
             if (event["type"] == "PRESS"):
                 if(event["button"] == "Button.left"):
                     pyautogui.mouseDown()
-                if(event["button"] == "Button.right"):
+                elif(event["button"] == "Button.right"):
                     pyautogui.mouseDown(button="right")
 
-            if (event["type"] == "RELEASE"):
-                if(event["button"] == "Button.left"):
+            elif (event["type"] == "RELEASE"):
+                if (event["button"] == "Button.left"):
                     pyautogui.mouseUp()
-                if(event["button"] == "Button.right"):
+                elif(event["button"] == "Button.right"):
                     pyautogui.mouseUp(button="right")
+
+    def lerp(self, a, b, t):
+        return a*(1-t)+b*t
 
     def printEventList(self):
         for event in self.eventList:
@@ -68,4 +78,3 @@ class EventPlayer:
         self.playFile()
 
         printGreen(f"Replaying '{filename}' has finished.", pre=BOLD)
-

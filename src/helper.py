@@ -21,13 +21,16 @@ def makeDict(time, group, type, button):
     return {"time": str(time), "group": group, "type": type, "button": button}
 
 
-def saveDataToFile(fileName, history):
+def saveDataToFile(fileName, history, overwrite):
     printYellow("Saving Data ...")
+
+    if not os.path.exists("savedRecordings"):
+        os.makedirs("savedRecordings")
 
     filenameCount = 1
     newFileName = "savedRecordings/"+fileName+".txt"
 
-    while True:
+    while True and not overwrite:
         if not os.path.isfile(newFileName):
             break
         newFileName = "savedRecordings/"+fileName+"_"+str(filenameCount)+".txt"

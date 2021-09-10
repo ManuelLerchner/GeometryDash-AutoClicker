@@ -10,18 +10,21 @@ from src.MouseListener import MouseListener
 
 class Recorder:
 
-    def __init__(self):
+    def __init__(self, overrite):
         self.history = []
         self.ML = MouseListener(self.history)
         self.KL = KeyboardListener(self.ML, self.history)
+        self.overwrite = overrite
 
-    def startRecording(self, TIME_DELAY):
+    def startRecording(self, TIME_DELAY, filename):
 
         print("-"*32)
         printYellow("Started Recorder")
 
         # Input filename
-        filename = str(input(Fore.GREEN+"Enter Record-Name: "+Style.RESET_ALL))
+        if not filename:
+            filename = str(
+                input(Fore.GREEN+"Enter Record-Name: "+Style.RESET_ALL))
 
         # Wait Time
         printYellow(f"\nStart listening in {TIME_DELAY} seconds ...")
@@ -43,6 +46,6 @@ class Recorder:
         printYellow("\nFinish Recording")
 
         # save Data
-        saveDataToFile(filename, self.history)
+        saveDataToFile(filename, self.history, self.overwrite)
 
         printGreen(f"'{filename}' has been saved", pre=BOLD)
